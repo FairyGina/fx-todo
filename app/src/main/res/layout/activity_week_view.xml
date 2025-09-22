@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeekViewActivity">
+
+    <!-- 홈화면(HomeScreen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".WeekViewActivity"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="UselessParent">
+
+        <!-- 홈화면 글씨 -->
+        <TextView
+            android:id="@+id/accountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:text="@string/app_name"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- > PriorityGraph 이미지 버튼 들어가기 -->
+
+        <ImageButton
+            android:id="@+id/p_graphView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/graphic"
+            android:contentDescription="@string/P_graph" />
+
+        <!-- > plus 이미지 버튼 들어가기 -->
+
+
+        <ImageButton
+            android:id="@+id/plusView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu"
+            android:contentDescription="@string/Plus" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/week"
+            android:onClick="month_change"
+            android:contentDescription="@string/year_month_week"/>
+        <!--월이나 주로 달력을 표시하는 것을 선택하는 이미지-->
+        <!--background: png 파일 배경 투명 유지, scaletype: 이미지 사이즈 조정해도 이미지가 제대로 보이게 함-->
+
+        <TextView
+            android:id="@+id/year_month_week"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="2sp"
+            android:text="@string/year_month"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+        <!--년도와 달을 표시해주는 텍스트-->
+
+        <ImageButton
+            android:layout_width="5dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/previous"
+            android:onClick="previous_week_button"
+            android:contentDescription="@string/year_month_week"/>
+        <!--달을 이전 달로 바꿀 수 있는 이미지 버튼-->
+
+        <ImageButton
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/next"
+            android:onClick="next_week_button"
+            android:contentDescription="@string/year_month_week"/>
+        <!--달을 다음 달로 바꿀 수 있는 이미지 버튼-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp">
+        <!--요일 표시하는 줄-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/monday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#8C8C8C" />
+        <!--월요일 텍스트-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tuesday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#8C8C8C" />
+        <!--화요일 텍스트-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wednesday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#8C8C8C" />
+        <!--수요일 텍스트-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Thursday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#8C8C8C" />
+        <!--목요일 텍스트-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/friday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#8C8C8C" />
+        <!--금요일 텍스트-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/saturday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#8187FF" />
+        <!--토요일 텍스트-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sunday"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#FF5C5C" />
+        <!--일요일 텍스트-->
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"
+        android:paddingRight="15sp" />
+
+    <ExpandableListView
+        android:id="@+id/eventListView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:groupIndicator="@null"
+        android:layout_weight="5"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

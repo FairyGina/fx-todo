@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "126099608838",
+    "firebase_url": "https://fx-todo-default-rtdb.firebaseio.com",
+    "project_id": "fx-todo",
+    "storage_bucket": "fx-todo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126099608838:android:625f5baa4c146edb903a87",
+        "android_client_info": {
+          "package_name": "com.example.fx_dodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126099608838-nktufs9kugug14h1o7ld2k8ri4fr1nre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fx_dodo",
+            "certificate_hash": "dfaf17e9f126207ec055f98561e0f98629ffc2aa"
+          }
+        },
+        {
+          "client_id": "126099608838-buk5bn01rgfjnd1d9cbjhpc1nngpvk7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXb61R1eEkZ6vKo6DHwswB3QJ4SRBP-2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126099608838-buk5bn01rgfjnd1d9cbjhpc1nngpvk7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126099608838:android:9ff3193d63df4200903a87",
+        "android_client_info": {
+          "package_name": "com.example.fx_todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126099608838-buk5bn01rgfjnd1d9cbjhpc1nngpvk7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXb61R1eEkZ6vKo6DHwswB3QJ4SRBP-2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126099608838-buk5bn01rgfjnd1d9cbjhpc1nngpvk7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

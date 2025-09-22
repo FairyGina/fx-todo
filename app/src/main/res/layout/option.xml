@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionActivity">
+
+    <!-- 설정 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        tools:context=".OptionActivity">
+
+        <!-- > out 이미지 버튼 들어가기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <ImageButton
+            android:id="@+id/outView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/Out"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/optionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:text="@string/Option"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- 사용자 계정 정보 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OptionActivity">
+
+        <!-- 로그인 글씨 -->
+        <Button
+            android:id="@+id/accountView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textAlignment="viewStart"
+            android:text="@string/Account"
+            android:background="#00000000"
+            android:textColor="@color/gray1"
+            android:textSize="20sp" />
+
+        <!--
+         enter 이미지 버튼 들어가기
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/enterView"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/In" />
+
+            -->
+
+    </LinearLayout>
+
+    <!-- 하루 일정 마감시간 변경 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OptionActivity">
+
+        <!-- 마감시간 설정 글씨 -->
+        <Button
+            android:id="@+id/deadlineView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/Deadline"
+            android:background="#00000000"
+            android:textColor="@color/gray1"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- 달력 시작 요일 변경 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OptionActivity">
+
+        <!-- 시작 요일 글씨 -->
+        <Button
+            android:id="@+id/start_dayView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/Start_day"
+            android:background="#00000000"
+            android:textColor="@color/gray1"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- 체크박스 기호 변경 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OptionActivity">
+
+        <!-- 로그아웃 글씨 -->
+        <Button
+            android:id="@+id/checkboxView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/Checkbox"
+            android:background="#00000000"
+            android:textColor="@color/gray1"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <!-- 로그아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OptionActivity">
+
+        <!-- 로그아웃 글씨 -->
+
+        <!-- > in 이미지 버튼 들어가기 -->
+        <Button
+            android:id="@+id/logoutView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textAlignment="viewStart"
+            android:text="@string/Logout"
+            android:background="#00000000"
+            android:textColor="@color/gray1"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <!-- 계정 탈퇴 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OptionActivity">
+
+        <!-- 계정 탈퇴 글씨 -->
+
+        <!-- > in 이미지 버튼 들어가기 -->
+        <Button
+            android:id="@+id/withdrawalView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textAlignment="viewStart"
+            android:text="@string/withdrawalView"
+            android:background="#00000000"
+            android:textColor="@color/orange"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

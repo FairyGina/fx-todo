@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">f(x) To-do</string>
+
+    <string name="year_month">2022.09</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wen</string>
+    <string name="Thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+
+    <string name="category">카테고리</string>
+
+    <string name="year_month_week">2022.09 Week1</string>
+
+    <string name="HomeScreen">홈 화면</string>
+    <string name="In">들어가기</string>
+    <string name="Out">나가기</string>
+    <string name="P_graph">우선순위 그래프</string>
+    <string name="add">추가</string>
+    <string name="Plus">더보기</string>
+    <string name="Option">설정</string>
+    <string name="Account">계정</string>
+    <string name="Logout">로그아웃</string>
+    <string name="Deadline">하루 마감시간 설정</string>
+    <string name="Start_day">시작 요일 변경</string>
+    <string name="Checkbox">체크박스 기호 변경</string>
+    <string name="Name">지나</string>
+    <string name="email">test@gmail.com</string>
+    <string name="withdrawalView">계정 탈퇴</string>
+</resources>
